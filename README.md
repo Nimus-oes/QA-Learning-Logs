@@ -21,7 +21,8 @@ Embarking on my journey towards becoming a QA automation engineer, I spent the f
 ### Plans for Next Week  
 - To dive deeper into the implementation of web element locators with Selenium  
 - To explore the functionalities and applications of pytest-bdd in QA automation process
-#
+
+
 ## Week 2
 *December 3rd, 2023 - December 10th, 2023*
 
@@ -42,7 +43,7 @@ This week was a bit challenging as I had to fight the flu with my completely blo
 - To dive deeper into the implementation of web element locators with Selenium  
 - To explore the functionalities and applications of pytest-bdd in QA automation process
 
-#
+
 ## Week 3
 *December 11th, 2023 - December 17th, 2023*
 
@@ -65,7 +66,7 @@ This week my focus shifted towards applying theoretical knowledge of web element
 - To explore the functionalities and applications of pytest-bdd in QA automation process
 - To proceed with the first assignment applying all the knowledge I gained so far
 
-#
+
 ## Week 4 & 5
 *December 18th, 2023 - December 29th, 2023* 
 
@@ -74,20 +75,20 @@ These past two weeks were dedicated to progressing through the first UI test ass
 
 ### Challenges: 
 - **ElementClickInterceptedException**: Most of the time, the error was about Element Click Intercepted Exception. After some intensive search and testing, I found the issue is mainly fixable by waiting for the element to be interactable or moving the element to the viewport. 
-    > **Solution**: 
-  > 1. Explicitly wait for the element to be interactable
-  > 2. Scroll the element into viewport
-  > 3. Try different types of click method
+> **Solution**:
+> 1. Explicitly wait for the element to be interactable
+> 2. Scroll the element into viewport
+> 3. Try different types of click method
 - **Wait not working properly**: Implicit waits, while seemingly straightforward, didn't consistently perform as expected, particularly during page navigation or dynamic content loading.
-    > **Solution**: 
-  > 1. Set explicit waits to each element where applicable
-  > 2. Set hard sleep when necessary as a practical workaround
+> **Solution**:
+> 1. Set explicit waits to each element where applicable
+> 2. Set hard sleep when necessary as a practical workaround
 - **Locating an SVG element with XPath**: Even though it was possible to locate an SVG element with XPath in the browser inspection, same Xpath didn't work with Selenium. 
-    > **Solution**: Use `name()` or `local-name()` method
+> **Solution**: Use `name()` or `local-name()` method
 - **Markets page not accessible with Firefox**: Markets page remains inaccessible on Firefox even with a VPN
-    > **Solution**: No solution found yet. Decided not to support Firefox for the test at this stage.
+> **Solution**: No solution found yet. Decided not to support Firefox for the test at this stage.
 - **Dropdown menu inactive**: 'Categories' dropdown menu is unresponsive to Selenium actions, unlike other dropdowns in the page.
-    > **Solution**: No solution found yet. Decided not to support this test case at this stage.
+> **Solution**: No solution found yet. Decided not to support this test case at this stage.
   
 
 ### Plans for Next Week
@@ -96,7 +97,7 @@ These past two weeks were dedicated to progressing through the first UI test ass
 - To make it available to set window size with commands when running tests  
 
 
-#
+
 ## Week 6 & 7
 *December 30th, 2023 - January 8th, 2024*  
 
@@ -112,16 +113,16 @@ Additionally, I have tried to improve the code quality by removing the duplicate
 
 ### Challenges 
 - **Scroll action discrepancy between mobile and desktop**: When scrolling up to the 'Favorites' navigation tab after clicking the start button to add the pair to the favorites, the scroll suddenly stops in the middle in the mobile environment. No issue found with the desktop version.
-    > **Solution**: Set hard sleep so the scroll can be completed
+> **Solution**: Set hard sleep so the scroll can be completed
 - **Markets page inaccessible in headless mode**: The page remains inaccessible in headless mode even with a VPN 
-    > **Solution**: No solution found yet. Decided not to support the headless mode at this stage.  
+> **Solution**: No solution found yet. Decided not to support the headless mode at this stage.  
 - **Spot page inaccessible with footer navigation**: When 'Spot' is clicked under the footer 'Trade' navigation menu, new window opens, and it redirects to crypto.com/exchange page.
-    > **Solution**: No solution found yet.  
+> **Solution**: No solution found yet.  
 
 ### Room for Improvements 
 - The test suite can be improved to take spot trading pairs as varying inputs so that it can test any pair provided, making the suite more compatible and reusable.  
-  > - All navigation menus under 'Spot' market can be tested (Favorites, All, USD, USDT, BTC, CRO, EUR)
-  > - The recommended item banners under 'Spot' market can also be tested 
+> - All navigation menus under 'Spot' market can be tested (Favorites, All, USD, USDT, BTC, CRO, EUR)
+> - The recommended item banners under 'Spot' market can also be tested 
 
 #
 ## Week 8
