@@ -1,5 +1,5 @@
-# Crypto.com-QA-Takehome-Test-Project
- Project journey and the final output
+# Learning Logs for Crypto.com QA Take-home Test
+ The project journey and things I learned on the path.
 
 ## Week 1
 *November 27th, 2023 - December 3rd, 2023*
@@ -22,7 +22,7 @@ Embarking on my journey towards becoming a QA automation engineer, I spent the f
 - To dive deeper into the implementation of web element locators with Selenium  
 - To explore the functionalities and applications of pytest-bdd in QA automation process
 
-
+&nbsp;
 ## Week 2
 *December 3rd, 2023 - December 10th, 2023*
 
@@ -43,7 +43,7 @@ This week was a bit challenging as I had to fight the flu with my completely blo
 - To dive deeper into the implementation of web element locators with Selenium  
 - To explore the functionalities and applications of pytest-bdd in QA automation process
 
-
+&nbsp;
 ## Week 3
 *December 11th, 2023 - December 17th, 2023*
 
@@ -66,7 +66,7 @@ This week my focus shifted towards applying theoretical knowledge of web element
 - To explore the functionalities and applications of pytest-bdd in QA automation process
 - To proceed with the first assignment applying all the knowledge I gained so far
 
-
+&nbsp;
 ## Week 4 & 5
 *December 18th, 2023 - December 29th, 2023* 
 
@@ -96,8 +96,7 @@ These past two weeks were dedicated to progressing through the first UI test ass
 - To make sure the test runs smoothly in both desktop and mobile environment
 - To make it available to set window size with commands when running tests  
 
-
-
+&nbsp;
 ## Week 6 & 7
 *December 30th, 2023 - January 8th, 2024*  
 
@@ -124,7 +123,7 @@ Additionally, I have tried to improve the code quality by removing the duplicate
 > - All navigation menus under 'Spot' market can be tested (Favorites, All, USD, USDT, BTC, CRO, EUR)
 > - The recommended item banners under 'Spot' market can also be tested 
 
-#
+&nbsp;
 ## Week 8
 *January 9th, 2024 - January 15th, 2024*  
 
@@ -139,4 +138,15 @@ Before diving into the test development, I took a course to familiarize myself w
 - **Test Filtering with Tags**: Learned that pytest-bdd tags can be used just like marks in pytest to filter the tests  
 
 ### Learning Resources  
-- [Behavior Driven Python with pytest-bdd](https://testautomationu.applitools.com/behavior-driven-python-with-pytest-bdd/) on Test Automation University
+- [Behavior Driven Python with pytest-bdd](https://testautomationu.applitools.com/behavior-driven-python-with-pytest-bdd/) on Test Automation University  
+
+&nbsp;
+## Week 9
+*January 16th, 2024 - January 21st, 2024* 
+
+This week I focused on completing the test suite for both Crypto.com Exchange page navigation and HKO weather forecast API test with pytest-bdd framework.
+
+### Key Achievements  
+- Added a command line option to HKO weather forecast API test using pytest_addoption() so it can take inputs for forecast date
+- In HKO weather forecast API test, improve the code to populate the current date, so it is based on HKT
+- In Crypto.com Exchange page navigation test, changed the click method for some elements from `click()` to `self.browser.execute_script("arguments[0].click();", element)` to minimize the random failures
